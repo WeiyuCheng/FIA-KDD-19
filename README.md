@@ -9,7 +9,7 @@ Author: Weiyu Cheng (weiyu_cheng at sjtu.edu.cn)
 Fast Influence Analysis (FIA) applies influence functions to latent factor models (LFMs) towards interpretable recommendation. We incorporate interpretability into LFMs by tracing each prediction back to models’ training data, and further provide intuitive neighbor-style explanations for the predictions. FIA significantly reduces the computational cost of influence functions by exploiting the characteristics of LFMs.
 
 ## Citation 
-If you want to use our codes and datasets in your research, please cite:
+If you want to use our codes in your research, please cite:
 ```
 @inproceedings{DBLP:conf/kdd/ChengSHZ19,
   author    = {Weiyu Cheng and
