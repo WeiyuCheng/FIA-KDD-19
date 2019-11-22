@@ -57,8 +57,8 @@ for data_sets in [data_sets_movielens, data_sets_yelp]:
             model_name = "NCF"
             num_steps = 120000
 
-        num_users = np.unique(data_sets.train._x[:, 0]).shape[0]
-        num_items = np.unique(data_sets.train._x[:, 1]).shape[0]
+        num_users = int(np.max(data_sets.train._x[:, 0])+1)
+        num_items = int(np.max(data_sets.train._x[:, 1])+1)
 
         weight_decay = 0.001
         initial_learning_rate = 0.001
