@@ -58,8 +58,8 @@ else:
     raise NotImplementedError
 weight_decay = args.weight_decay
 initial_learning_rate = args.lr
-num_users = np.unique(data_sets.train._x[:, 0]).shape[0]
-num_items = np.unique(data_sets.train._x[:, 1]).shape[0]
+num_users = int(np.max(data_sets.train._x[:, 0])+1)
+num_items = int(np.max(data_sets.train._x[:, 1])+1)
 print("number of users: %d" % num_users)
 print("number of items: %d" % num_items)
 print("number of training examples: %d" % data_sets.train._x.shape[0])
